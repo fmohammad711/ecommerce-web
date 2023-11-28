@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ol {
+            position: relative;
+            display: flex;
+            list-style-type: none;
+            background: #2b2a29;
+            line-height: 48px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ol li {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        li:first-child,
+        li:last-child {
+            border-top: 51px solid #2b2a29;
+            position: absolute;
+            border-left: 43px solid transparent;
+            border-right: 50px solid transparent;
+            left: -43px;
+            top: -2px;
+            
+        }
+
+        li:last-child{
+            right: -50px;
+            left: unset;
+        }
+
+        .banner-bg{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+
+        header {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header>
+            <nav>
+                <ol>
+                    <li></li>
+                    <li>
+                        <a href="#">Best Sellers</a>
+                    </li>
+                    <li>
+                        <a href="#">Gift Ideas</a>
+                    </li>
+                    <li>
+                        <a href="#">New Releases</a>
+                    </li>
+                    <li>
+                        <a href="#">Today's Deals</a>
+                    </li>
+                    <li>
+                        <a href="#">Customer Service</a>
+                    </li>
+                    <li></li>
+                </ol>
+            </nav>
+        </header>
+
+        <img class="banner-bg" src="banner-bg.png" alt="">
+
+    </div>
+
+
+    <div id="box"></div>
+
+</body>
+
+</html>
